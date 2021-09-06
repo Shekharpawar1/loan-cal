@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="css/main.css">   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+
+            <h1 class="heading">Loan Calculator</h1>
+    
+            <div class="forms">
+                <form id="form">
+
+                    <label for="txt1" id="amt">
+                        <i class="fas fa-dollar-sign"></i>
+
+                    </label>
+                    <input type="number" placeholder="Loan Amount" id="amount">
+
+
+
+                    <label for="txt2" id="annual-int"><i class="fas fa-percent"></i>
+
+                    </label>
+                    <input type="number" placeholder="Annual Interest" id="interest">
+
+
+
+
+
+
+                    <input type="number" placeholder="Repayment Years" id="years">
+                    <input type="submit" value="Calculate" id="btn btn-primary">
+                </form>
+                <!-- loader here -->
+                <div id="loading">
+                       <img src="image/loading-buffering.gif"  alt="loading image">
+
+                </div>
+              
+                <!-- Results -->
+                <div class="results-area">
+                    <h2>Results</h2>
+                    <div class="form-group">
+                        <span>Monthly Payment</span>
+                        <input type="number" name="" id="monthly-payment" disabled>
+
+                    </div>
+                    <div class="form-group">
+                        <span>Total Payment</span>
+                        <input type="number" name="" id="total-payment" disabled>
+
+                    </div>
+                    <div class="form-group">
+                        <span>Total Interest</span>
+                        <input type="number" name="" id="total-interest" disabled>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/04e8990ed0.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
